@@ -1,19 +1,24 @@
----
-title: "Introduction to Bioinformatics💻"
-author: "Martin Skarzynski"
-date: "`r Sys.Date()`"
-venue: "Biotech 3"
-output:
-  xaringan::moon_reader:
-    lib_dir: libs
-    nature:
-      highlightStyle: github
-      highlightLines: true
-      countIncrementalSlides: false
-      ratio: '16:9'
----
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Introduction to Bioinformatics💻</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Martin Skarzynski" />
+    <meta name="date" content="2019-05-14" />
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Introduction to Bioinformatics💻
+### Martin Skarzynski
+### 2019-05-14
 
 ---
+
+
 
 # Outline
 - What is bioinformatics?
@@ -25,13 +30,8 @@ output:
 - Next generation sequencing
     - UCSC genome browser
 
----
-
 # What is bioinformatics?
 ![](http://omgenomics.com/wp-content/uploads/2017/03/Venn-diagram-2-1024x576.png)
-
-
----
 
 # What is bioinformatics?
 - DEFINITION
@@ -42,104 +42,67 @@ output:
     - Solve biological problems
         - Human disease, physiological traits
 
----
-
 # Bioinformatics: Early perceptions
 ![](http://www.philcallaway.ab.ca/images/Cartoons/privacy%20cartoon2.jpg)
 
----
-
 # Explosion in sequence data
 ![](http://www.kurzweilai.net/dna_sequencing_data.jpg)
-
----
 
 # National Center for Biotechnology Information (NCBI)
 - Portal to extensive database of resources
     - Analysis tools ≠ BLAST 
     - Sequence data ≠ GenBank, GEO ≠ Scientific literature ≠ PubMed ≠ Protein structures, Variation, etc
 
----
-
 # NCBI website
-- http://ncbi.nlm.nih.gov
-
----
+∑ http://ncbi.nlm.nih.gov
 
 # GenBank
 
----
-
 # Demo
-- Search `gapdh' in GenBank
-- Available information
-- Sequence, genomic context, tissue expression, linked articles, etc.
-
----
+∑ Search `gapdh' in GenBank
+∑ Available information
+≠ Sequence, genomic context, tissue expression, linked articles, etc.
 
 # PubMed
 
----
-
 # Sequence Search
-- Problem
-- Search for an unknown (query) sequence from a large database of genomes
-- Tool
+∑ Problem
+≠ Search for an unknown (query) sequence from a large database of genomes
+∑ Tool
 BLAST
 Basic Local Alignment Search Tool
 
-
----
-
 # BLAST workflow
-- Choose appropriate BLAST program ∑ Enter query sequence ∑ Select database to search ∑ Run BLAST search ∑ Analyze output
-
----
+∑ Choose appropriate BLAST program ∑ Enter query sequence ∑ Select database to search ∑ Run BLAST search ∑ Analyze output
 
 # NCBI BLAST
-
----
 
 # Nucleotide BLAST (BLASTN)
 Query Sequence Select Database
 
----
-
 # Protein BLAST (BLASTP)
 Query Sequence Select Database
-
----
 
 # BLAST output
 - Job summary
 
----
-
 # BLAST output
 - Graphic summary
 - Color-coded based on scores ≠ Mouse-over for more information
-
----
 
 # BLAST output
 - Ranked alignments with scores
 - Higher scores = better alignment ≠ Lower E-values = lower probability that alignment
 was random chance
 
----
-
 # BLAST output
 - Detailed alignments
 - Visual representation of alignment ≠ Can include gaps or mismatches
-
----
 
 # Demo
 - https://digitalworldbiology.com/BLAST/sequences
 - Copy and paste sequences into BLAST
 - Examine results
-
----
 
 # Multiple sequence alignment
 - Alignment of three or more sequences to infer sequence homology and study evolutionary relationships
@@ -147,18 +110,12 @@ was random chance
 - Tool CLUSTAL
 Cluster Analysis of Pairwise Alignments
 
----
-
 # CLUSTAL workflow
 - Input sequences or upload file ∑ Specify parameters ∑ Run CLUSTAL ∑ Analyze results
-
----
 
 # Clustal Omega
 - http://www.ebi.ac.uk/Tools/msa/clustalo/
 Type of sequence Query Sequence or file
-
----
 
 # Clustal Omega Output
 - Alignment
@@ -167,8 +124,6 @@ Symbol * : .
 
 Meaning Fully conserved residue Strongly related residues Weakly related residues
 
----
-
 # Clustal Omega Output
 - Alignment
 
@@ -176,20 +131,14 @@ Color Residues Red AVFPMILW Blue DE Magenta RK Green STYHCNGQ Grey Others
 
 Properties Small (small+ hydrophobic (incl. aromatic -Y)) Acidic Basic Hydroxyl + sulfhydryl + amine + G Unusual amino acids
 
----
-
 # Clustal Omega Output
 - Phylogenetic tree
-
----
 
 # Demo
 - Download file:
 - http://www.bioinformaticsworld.com/clustal_seq.txt
 - Go to Clustal Omega website
 - Run on downloaded file
-
----
 
 # Next-generation sequencing (NGS)
 - Quantum leap of DNA sequencing technology ∑ Ability to sequence whole genomes fast and
@@ -198,8 +147,6 @@ cheap ∑ Large repository of public data
 - Tools to browse genomes and view data
 - UCSC genome browser
 
----
-
 # ENCODE project
 - Encyclopedia of DNA elements
 - https://www.encodeproject.org/
@@ -207,16 +154,11 @@ cheap ∑ Large repository of public data
 - Extended to mouse, worm, fly
 - Massive consortium led by NHGRI
 
----
 # ENCODE project: Datasets
 https://www.encodeproject.org/
 
----
-
 # ENCODE project: Assays
 https://www.encodeproject.org/
-
----
 
 # UCSC Genome Browser
 - Large public database of genome data
@@ -224,8 +166,6 @@ https://www.encodeproject.org/
 repositories, e.g. ENCODE
 - Easy to use ∑ Customizable view ∑ Can upload your own data
 (`custom tracks')
-
----
 
 # UCSC Genome Browser
 Mouse genome, mm9
@@ -239,21 +179,13 @@ Conservation
 Repeat elements
 Additional options
 
----
-
 # Annotation tracks
 
----
-
 # ENCODE @ UCSC
-
----
 
 # ENCODE @ UCSC
 Tissues available
 Transcription factors
-
----
 
 # ENCODE @ UCSC
 - Separate website with ENCODE data also available
@@ -261,12 +193,8 @@ https://genome.ucsc.edu/ENCODE/
 Search human data
 Search mouse data
 
----
-
 # ENCODE @ UCSC
 - Search full database for tracks to display
-
----
 
 # Recap
 - What is bioinformatics?
@@ -278,14 +206,59 @@ Search mouse data
 - Next-generation sequencing (NGS)
 - UCSC Genome Browser ≠ ENCODE project
 
----
-
 # Questions?
-
----
 
 # Demo files
 - BLAST
 - https://digitalworldbiology.com/BLAST/sequences
 - CLUSTAL
 - http://www.bioinformaticsworld.com/clustal_seq. txt
+    </textarea>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function() {
+  var d = document, s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})();</script>
+
+<script>
+(function() {
+  var i, text, code, codes = document.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+})();
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
