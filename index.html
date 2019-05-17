@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Introduction to Bioinformatics💻</title>
+    <title>Introduction to Bioinformatics🧬💻</title>
     <meta charset="utf-8">
     <meta name="author" content="Martin Skarzynski" />
-    <meta name="date" content="2019-05-14" />
+    <meta name="date" content="2019-05-17" />
     <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
     <link href="libs/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
   </head>
@@ -12,13 +12,19 @@
     <textarea id="source">
 class: center, middle, inverse, title-slide
 
-# Introduction to Bioinformatics💻
+# Introduction to Bioinformatics🧬💻
 ### Martin Skarzynski
-### 2019-05-14
+### 2019-05-17
 
 ---
 
 
+&lt;style type="text/css"&gt;
+.remark-slide-content {
+    font-size: 35px;
+    padding: 1em 4em 1em 4em;
+}
+&lt;/style&gt;
 
 # Outline
 - What is bioinformatics?
@@ -30,8 +36,13 @@ class: center, middle, inverse, title-slide
 - Next generation sequencing
     - UCSC genome browser
 
+---
+
 # What is bioinformatics?
 ![](http://omgenomics.com/wp-content/uploads/2017/03/Venn-diagram-2-1024x576.png)
+
+
+---
 
 # What is bioinformatics?
 - DEFINITION
@@ -42,67 +53,104 @@ class: center, middle, inverse, title-slide
     - Solve biological problems
         - Human disease, physiological traits
 
+---
+
 # Bioinformatics: Early perceptions
 ![](http://www.philcallaway.ab.ca/images/Cartoons/privacy%20cartoon2.jpg)
 
+---
+
 # Explosion in sequence data
 ![](http://www.kurzweilai.net/dna_sequencing_data.jpg)
+
+---
 
 # National Center for Biotechnology Information (NCBI)
 - Portal to extensive database of resources
     - Analysis tools ≠ BLAST 
     - Sequence data ≠ GenBank, GEO ≠ Scientific literature ≠ PubMed ≠ Protein structures, Variation, etc
 
+---
+
 # NCBI website
-∑ http://ncbi.nlm.nih.gov
+- http://ncbi.nlm.nih.gov
+
+---
 
 # GenBank
 
+---
+
 # Demo
-∑ Search `gapdh' in GenBank
-∑ Available information
-≠ Sequence, genomic context, tissue expression, linked articles, etc.
+- Search `gapdh' in GenBank
+- Available information
+- Sequence, genomic context, tissue expression, linked articles, etc.
+
+---
 
 # PubMed
 
+---
+
 # Sequence Search
-∑ Problem
-≠ Search for an unknown (query) sequence from a large database of genomes
-∑ Tool
+- Problem
+- Search for an unknown (query) sequence from a large database of genomes
+- Tool
 BLAST
 Basic Local Alignment Search Tool
 
+
+---
+
 # BLAST workflow
-∑ Choose appropriate BLAST program ∑ Enter query sequence ∑ Select database to search ∑ Run BLAST search ∑ Analyze output
+- Choose appropriate BLAST program ∑ Enter query sequence ∑ Select database to search ∑ Run BLAST search ∑ Analyze output
+
+---
 
 # NCBI BLAST
+
+---
 
 # Nucleotide BLAST (BLASTN)
 Query Sequence Select Database
 
+---
+
 # Protein BLAST (BLASTP)
 Query Sequence Select Database
+
+---
 
 # BLAST output
 - Job summary
 
+---
+
 # BLAST output
 - Graphic summary
 - Color-coded based on scores ≠ Mouse-over for more information
+
+---
 
 # BLAST output
 - Ranked alignments with scores
 - Higher scores = better alignment ≠ Lower E-values = lower probability that alignment
 was random chance
 
+---
+
 # BLAST output
 - Detailed alignments
 - Visual representation of alignment ≠ Can include gaps or mismatches
+
+---
 
 # Demo
 - https://digitalworldbiology.com/BLAST/sequences
 - Copy and paste sequences into BLAST
 - Examine results
+
+---
 
 # Multiple sequence alignment
 - Alignment of three or more sequences to infer sequence homology and study evolutionary relationships
@@ -110,12 +158,18 @@ was random chance
 - Tool CLUSTAL
 Cluster Analysis of Pairwise Alignments
 
+---
+
 # CLUSTAL workflow
 - Input sequences or upload file ∑ Specify parameters ∑ Run CLUSTAL ∑ Analyze results
+
+---
 
 # Clustal Omega
 - http://www.ebi.ac.uk/Tools/msa/clustalo/
 Type of sequence Query Sequence or file
+
+---
 
 # Clustal Omega Output
 - Alignment
@@ -124,6 +178,8 @@ Symbol * : .
 
 Meaning Fully conserved residue Strongly related residues Weakly related residues
 
+---
+
 # Clustal Omega Output
 - Alignment
 
@@ -131,14 +187,20 @@ Color Residues Red AVFPMILW Blue DE Magenta RK Green STYHCNGQ Grey Others
 
 Properties Small (small+ hydrophobic (incl. aromatic -Y)) Acidic Basic Hydroxyl + sulfhydryl + amine + G Unusual amino acids
 
+---
+
 # Clustal Omega Output
 - Phylogenetic tree
+
+---
 
 # Demo
 - Download file:
 - http://www.bioinformaticsworld.com/clustal_seq.txt
 - Go to Clustal Omega website
 - Run on downloaded file
+
+---
 
 # Next-generation sequencing (NGS)
 - Quantum leap of DNA sequencing technology ∑ Ability to sequence whole genomes fast and
@@ -147,6 +209,8 @@ cheap ∑ Large repository of public data
 - Tools to browse genomes and view data
 - UCSC genome browser
 
+---
+
 # ENCODE project
 - Encyclopedia of DNA elements
 - https://www.encodeproject.org/
@@ -154,11 +218,16 @@ cheap ∑ Large repository of public data
 - Extended to mouse, worm, fly
 - Massive consortium led by NHGRI
 
+---
 # ENCODE project: Datasets
 https://www.encodeproject.org/
 
+---
+
 # ENCODE project: Assays
 https://www.encodeproject.org/
+
+---
 
 # UCSC Genome Browser
 - Large public database of genome data
@@ -166,6 +235,8 @@ https://www.encodeproject.org/
 repositories, e.g. ENCODE
 - Easy to use ∑ Customizable view ∑ Can upload your own data
 (`custom tracks')
+
+---
 
 # UCSC Genome Browser
 Mouse genome, mm9
@@ -179,13 +250,21 @@ Conservation
 Repeat elements
 Additional options
 
+---
+
 # Annotation tracks
 
+---
+
 # ENCODE @ UCSC
+
+---
 
 # ENCODE @ UCSC
 Tissues available
 Transcription factors
+
+---
 
 # ENCODE @ UCSC
 - Separate website with ENCODE data also available
@@ -193,8 +272,12 @@ https://genome.ucsc.edu/ENCODE/
 Search human data
 Search mouse data
 
+---
+
 # ENCODE @ UCSC
 - Search full database for tracks to display
+
+---
 
 # Recap
 - What is bioinformatics?
@@ -206,7 +289,11 @@ Search mouse data
 - Next-generation sequencing (NGS)
 - UCSC Genome Browser ≠ ENCODE project
 
+---
+
 # Questions?
+
+---
 
 # Demo files
 - BLAST

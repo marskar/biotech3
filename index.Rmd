@@ -1,5 +1,5 @@
 ---
-title: "Introduction to Bioinformatics💻"
+title: "Introduction to Bioinformatics🧬💻"
 author: "Martin Skarzynski"
 date: "`r Sys.Date()`"
 venue: "Biotech 3"
@@ -13,7 +13,12 @@ output:
       ratio: '16:9'
 ---
 
----
+<style type="text/css">
+.remark-slide-content {
+    font-size: 35px;
+    padding: 1em 4em 1em 4em;
+}
+</style>
 
 # Outline
 - What is bioinformatics?
@@ -50,14 +55,16 @@ output:
 ---
 
 # Explosion in sequence data
-![](http://www.kurzweilai.net/dna_sequencing_data.jpg)
+![](https://www.genome.gov/sites/default/files/inline-images/costpermb_2017.jpg)
 
 ---
 
 # National Center for Biotechnology Information (NCBI)
 - Portal to extensive database of resources
-    - Analysis tools ≠ BLAST 
-    - Sequence data ≠ GenBank, GEO ≠ Scientific literature ≠ PubMed ≠ Protein structures, Variation, etc
+    - Analysis tools - BLAST 
+    - Sequence data - GenBank, GEO
+    - Scientific literature - PubMed
+    - Protein structures, Variation, etc
 
 ---
 
@@ -68,6 +75,7 @@ output:
 
 # GenBank
 
+![]()
 ---
 
 # Demo
