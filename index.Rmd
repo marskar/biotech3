@@ -79,7 +79,7 @@ knitr::include_graphics("https://www.genome.gov/sites/default/files/inline-image
 
 ---
 
-# NCBI website - https://ncbi.nlm.nih.gov
+# [NCBI website](https://ncbi.nlm.nih.gov)
 
 ```{r ncbi}
 knitr::include_graphics("https://s3.amazonaws.com/libapps/accounts/49010/images/NCBIHome.png")
@@ -87,7 +87,7 @@ knitr::include_graphics("https://s3.amazonaws.com/libapps/accounts/49010/images/
 
 ---
 
-# GenBank - https://ncbi.nlm.nih.gov/genbank/
+# [GenBank](https://ncbi.nlm.nih.gov/genbank/)
 
 ```{r genbank}
 knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/f/fc/Genbank.jpg")
@@ -102,7 +102,7 @@ knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/f/fc/Gen
 
 ---
 
-# PubMed - https://www.ncbi.nlm.nih.gov/pubmed/
+# [PubMed](https://www.ncbi.nlm.nih.gov/pubmed/)
 
 ```{r pubmed}
 knitr::include_graphics("https://www.gfmer.ch/SRH-Course-2015/research-methodology/images/Enter-terms-search-box1.jpg")
@@ -126,7 +126,7 @@ knitr::include_graphics("https://www.gfmer.ch/SRH-Course-2015/research-methodolo
 
 ---
 
-# NCBI BLAST - https://blast.ncbi.nlm.nih.gov/
+# [NCBI BLAST](https://blast.ncbi.nlm.nih.gov/)
 
 ```{r blast}
 knitr::include_graphics("https://widdowquinn.github.io/2018-03-06-ibioic/02-sequence_databases/images/01-01_ncbi_landing.png")
@@ -222,8 +222,7 @@ knitr::include_graphics("https://www.ncbi.nlm.nih.gov/books/NBK62051/bin/blast_g
 
 ---
 
-# Clustal Omega
-- http://www.ebi.ac.uk/Tools/msa/clustalo/
+# [Clustal Omega](http://www.ebi.ac.uk/Tools/msa/clustalo/)
 
 ```{r clustal-omega}
 knitr::include_graphics("https://cdn-images-1.medium.com/max/2400/1*BtZ6GNh_768JAvtCQZE7GQ.png")
@@ -280,7 +279,7 @@ knitr::include_graphics("http://arriolagen677s12.weebly.com/uploads/1/0/6/4/1064
 
 ---
 
-# ENCODE project - https://encodeproject.org/
+# [ENCODE project](https://encodeproject.org/)
 - Encyclopedia of DNA elements
 - https://www.encodeproject.org/
 - Launched in 2003 to identify all functional elements in human genome
@@ -288,15 +287,15 @@ knitr::include_graphics("http://arriolagen677s12.weebly.com/uploads/1/0/6/4/1064
 - Massive consortium led by NHGRI
 
 ---
-# ENCODE project: Datasets - https://encodeproject.org/
+# [ENCODE project](https://encodeproject.org/): Datasets
 
 ---
 
-# ENCODE project: Assays - https://encodeproject.org/
+# [ENCODE project](https://encodeproject.org/): Assays
 
 ---
 
-# UCSC Genome Browser - https://genome.ucsc.edu/ 
+# [UCSC Genome Browser](https://genome.ucsc.edu/)
 - Large public database of genome data
 - Linked to many public
 repositories, e.g. ENCODE
@@ -306,7 +305,7 @@ repositories, e.g. ENCODE
 
 ---
 
-# UCSC Genome Browser - https://genome.ucsc.edu/ 
+# [UCSC Genome Browser](https://genome.ucsc.edu/)
 Mouse genome, mm9
 
 Genomic location
