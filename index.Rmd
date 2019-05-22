@@ -213,7 +213,7 @@ knitr::include_graphics("https://www.ncbi.nlm.nih.gov/books/NBK62051/bin/blast_g
 
 # [Galaxy](https://galaxyproject.github.io/)
 
-```{r galaxy}
+```{r galaxy, out.height=300}
 knitr::include_graphics("https://galaxyproject.github.io/static/galaxyproject.jpg")
 ```
 
