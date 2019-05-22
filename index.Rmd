@@ -160,16 +160,20 @@ knitr::include_graphics("https://s3.amazonaws.com/libapps/accounts/5290/images/N
 
 # BLAST output
 - Job summary
+- Graphic summary
+
+```{r blast-output1}
+knitr::include_graphics("https://guides.nnlm.gov/uploads/images/results_graph.png")
+```
 
 ---
 
 # BLAST output
-- Graphic summary
 - Color-coded based on scores 
   - Mouse-over for more information
 
 
-```{r blast-output, out.height=300}
+```{r blast-output2, out.height=350}
 knitr::include_graphics("https://imgix.albert.io/user-assets/jawagoner36/d750ffa6-63ab-4da4-8ed6-b800cf1230f8-BLAST%20results%20picture%20small.png?ixjsv=2.2.4&rect=23%2C0%2C1098%2C458&w=1")
 ```
 
@@ -182,7 +186,7 @@ knitr::include_graphics("https://imgix.albert.io/user-assets/jawagoner36/d750ffa
 - Lower E-values = lower probability that alignment
 was random chance
 
-```{r blast-output2, out.height=300}
+```{r blast-output3, out.height=300}
 knitr::include_graphics("https://sjc2.discourse-cdn.com/standard10/uploads/mothur/original/1X/345a0d44652af3f67426b5a9ec88e7a47396d91c.png")
 ```
 
@@ -194,7 +198,7 @@ knitr::include_graphics("https://sjc2.discourse-cdn.com/standard10/uploads/mothu
 - Visual representation of alignment 
 - Can include gaps or mismatches
 
-```{r blast-output3, out.height=300}
+```{r blast-output4, out.height=300}
 knitr::include_graphics("https://www.ncbi.nlm.nih.gov/books/NBK62051/bin/blast_glossary-Image004.jpg")
 ```
 
@@ -210,7 +214,8 @@ knitr::include_graphics("https://www.ncbi.nlm.nih.gov/books/NBK62051/bin/blast_g
 # Multiple sequence alignment
 - Alignment of three or more sequences to infer sequence homology and study evolutionary relationships
   - Protein, DNA or RNA
-- CLUSTAL = **Clust**er Analysis of Pairwise **Al**ignments
+- CLUSTAL
+  - **CLUST**er Analysis of Pairwise **AL**ignments
 
 ---
 
@@ -286,12 +291,16 @@ knitr::include_graphics("http://arriolagen677s12.weebly.com/uploads/1/0/6/4/1064
 - Extended to mouse, worm, fly
 - Massive consortium led by NHGRI
 
----
-# [ENCODE project](https://encodeproject.org/): Datasets
-
+```{r encode-logo, out.height=200}
+knitr::include_graphics("https://pbs.twimg.com/profile_images/2019909630/ENCODE_logo_NHGRI.JPG")
+```
 ---
 
 # [ENCODE project](https://encodeproject.org/): Assays
+
+```{r encode-assays, out.height=400}
+knitr::include_graphics("https://www.encodeproject.org/static/img/classic-image.jpg")
+```
 
 ---
 
