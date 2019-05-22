@@ -208,8 +208,33 @@ knitr::include_graphics("https://www.ncbi.nlm.nih.gov/books/NBK62051/bin/blast_g
 - https://digitalworldbiology.com/BLAST/sequences
 - Copy and paste sequences into BLAST
   - Examine results
+  
+---
+
+# [Galaxy](https://galaxyproject.github.io/)
+
+```{r galaxy}
+knitr::include_graphics("https://galaxyproject.github.io/static/galaxyproject.jpg")
+```
 
 ---
+
+# [Galaxy BLAST](https://galaxyproject.github.io/training-material/topics/genome-annotation/tutorials/genome-annotation/tutorial.html#similarity-searches-blast)
+
+```{r galaxy-blastp}
+knitr::include_graphics("https://galaxyproject.github.io/training-material/topics/genome-annotation/images/blastP.png")
+```
+
+---
+
+# Group Activity
+
+1. Find the sequence of a protein of interest 
+1. BLAST the sequence to make sure it is correct
+1. Find the sequence's molecular weight (in kilodatons)
+
+---
+
 
 # Multiple sequence alignment
 - Alignment of three or more sequences to infer sequence homology and study evolutionary relationships
@@ -310,47 +335,37 @@ knitr::include_graphics("https://www.encodeproject.org/static/img/classic-image.
 repositories, e.g. ENCODE
 - Easy to use 
 - Customizable view 
--  Can upload your own data (`custom tracks`)
+-  Can upload your own data ("custom tracks")
 
 ---
 
 # [UCSC Genome Browser](https://genome.ucsc.edu/)
-Mouse genome, mm9
 
-Genomic location
-
-Search box
-
-Annotation
-Conservation
-Repeat elements
-Additional options
+```{r ucsc-main}
+knitr::include_graphics("https://ucscgenomics.soe.ucsc.edu/wp-content/uploads/2016/05/Untitled-6.png")
+```
 
 ---
 
+# [UCSC Genome Browser](https://genome.ucsc.edu/)
+
+```{r ucsc-output}
+knitr::include_graphics("https://i.ytimg.com/vi/wmmqYL4jdAo/maxresdefault.jpg")
+```
+
+---
 # Annotation tracks
 
----
-
-# ENCODE @ UCSC
-
----
-
-# ENCODE @ UCSC
-Tissues available
-Transcription factors
+```{r ucsc-tracks}
+knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/c/c4/UCSC_Tracks.jpg")
+```
 
 ---
 
 # ENCODE @ UCSC
-- Separate website with ENCODE data also available
-https://genome.ucsc.edu/ENCODE/
-Search human data
-Search mouse data
-
----
-
-# ENCODE @ UCSC
+- Separate website with ENCODE data also available https://genome.ucsc.edu/ENCODE/
+- Search human data
+- Search mouse data
 - Search full database for tracks to display
 
 ---
@@ -360,6 +375,7 @@ Search mouse data
 - NCBI portal - GenBank, Pubmed
 - Sequence analysis
 - NCBI BLAST
+- Galaxy
 - Multiple sequence alignment
 - Clustal Omega
 - Next-generation sequencing (NGS)
