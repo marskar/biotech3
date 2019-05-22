@@ -20,6 +20,10 @@ output:
 }
 </style>
 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, eval = TRUE, out.height = 450)
+```
+
 # Outline
 - What is bioinformatics?
     - NCBI portal, GenBank, PubMed
@@ -33,7 +37,10 @@ output:
 ---
 
 # What is bioinformatics?
-![](http://omgenomics.com/wp-content/uploads/2017/03/Venn-diagram-2-1024x576.png)
+
+```{r biovenn, out.height=550}
+knitr::include_graphics("http://omgenomics.com/wp-content/uploads/2017/03/Venn-diagram-2-1024x576.png")
+```
 
 
 ---
@@ -50,12 +57,16 @@ output:
 ---
 
 # Bioinformatics: Early perceptions
-![](http://www.philcallaway.ab.ca/images/Cartoons/privacy%20cartoon2.jpg)
+```{r bioinfocartoon}
+knitr::include_graphics("http://www.philcallaway.ab.ca/images/Cartoons/privacy%20cartoon2.jpg")
+```
 
 ---
 
 # Explosion in sequence data
-![](https://www.genome.gov/sites/default/files/inline-images/costpermb_2017.jpg)
+```{r seqcost}
+knitr::include_graphics("https://www.genome.gov/sites/default/files/inline-images/costpermb_2017.jpg")
+```
 
 ---
 
@@ -68,37 +79,41 @@ output:
 
 ---
 
-# NCBI website
-- http://ncbi.nlm.nih.gov
+# NCBI website - https://ncbi.nlm.nih.gov
 
-![](https://s3.amazonaws.com/libapps/accounts/49010/images/NCBIHome.png)
+```{r ncbi}
+knitr::include_graphics("https://s3.amazonaws.com/libapps/accounts/49010/images/NCBIHome.png")
+```
 
 ---
 
-# GenBank
+# GenBank - https://ncbi.nlm.nih.gov/genbank/
 
-![]()
+```{r genbank}
+knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/f/fc/Genbank.jpg")
+```
+
 ---
 
 # Demo
-- Search `gapdh' in GenBank
+- Search `gapdh` in GenBank
 - Available information
-- Sequence, genomic context, tissue expression, linked articles, etc.
+  - Sequence, genomic context, tissue expression, linked articles, etc.
 
 ---
 
-# PubMed
+# PubMed - https://www.ncbi.nlm.nih.gov/pubmed/
 
-![](https://www.gfmer.ch/SRH-Course-2015/research-methodology/images/Enter-terms-search-box1.jpg)
+```{r pubmed}
+knitr::include_graphics("https://www.gfmer.ch/SRH-Course-2015/research-methodology/images/Enter-terms-search-box1.jpg")
+```
+
 ---
 
 # Sequence Search
 - Problem
-- Search for an unknown (query) sequence from a large database of genomes
-- Tool
-BLAST
-Basic Local Alignment Search Tool
-
+  - Search for an unknown (query) sequence from a large database of genomes
+- BLAST = Basic Local Alignment Search Tool
 
 ---
 
@@ -111,17 +126,35 @@ Basic Local Alignment Search Tool
 
 ---
 
-# NCBI BLAST
+# NCBI BLAST - https://blast.ncbi.nlm.nih.gov/
+
+```{r blast}
+knitr::include_graphics("https://widdowquinn.github.io/2018-03-06-ibioic/02-sequence_databases/images/01-01_ncbi_landing.png")
+```
 
 ---
 
 # Nucleotide BLAST (BLASTN)
-Query Sequence Select Database
+
+```{r blastn-link}
+knitr::include_graphics("https://guides.nnlm.gov/uploads/images/nuc_blast.png")
+```
+
+---
+
+# Nucleotide BLAST (BLASTN)
+
+```{r blastn-interface}
+knitr::include_graphics("https://1.bp.blogspot.com/-GtM5EGPh1Ks/UD_S4DmT84I/AAAAAAAAhyw/68cTUWXeFpE/s1600/Screen+Shot+2012-08-30+at+1.50.50+PM.png")
+```
 
 ---
 
 # Protein BLAST (BLASTP)
-Query Sequence Select Database
+
+```{r blastp}
+knitr::include_graphics("https://s3.amazonaws.com/libapps/accounts/5290/images/NCBI_LibGuide_12.jpg")
+```
 
 ---
 
@@ -135,13 +168,24 @@ Query Sequence Select Database
 - Color-coded based on scores 
   - Mouse-over for more information
 
+
+```{r blast-output, out.height=300}
+knitr::include_graphics("https://imgix.albert.io/user-assets/jawagoner36/d750ffa6-63ab-4da4-8ed6-b800cf1230f8-BLAST%20results%20picture%20small.png?ixjsv=2.2.4&rect=23%2C0%2C1098%2C458&w=1")
+```
+
 ---
 
 # BLAST output
+
 - Ranked alignments with scores
 - Higher scores = better alignment 
 - Lower E-values = lower probability that alignment
 was random chance
+
+```{r blast-output2, out.height=300}
+knitr::include_graphics("https://sjc2.discourse-cdn.com/standard10/uploads/mothur/original/1X/345a0d44652af3f67426b5a9ec88e7a47396d91c.png")
+```
+
 
 ---
 
@@ -150,62 +194,79 @@ was random chance
 - Visual representation of alignment 
 - Can include gaps or mismatches
 
+```{r blast-output3, out.height=300}
+knitr::include_graphics("https://www.ncbi.nlm.nih.gov/books/NBK62051/bin/blast_glossary-Image004.jpg")
+```
+
 ---
 
 # Demo
 - https://digitalworldbiology.com/BLAST/sequences
 - Copy and paste sequences into BLAST
-- Examine results
+  - Examine results
 
 ---
 
 # Multiple sequence alignment
 - Alignment of three or more sequences to infer sequence homology and study evolutionary relationships
-- Protein, DNA or RNA
-- Tool CLUSTAL
-Cluster Analysis of Pairwise Alignments
+  - Protein, DNA or RNA
+- CLUSTAL = **Clust**er Analysis of Pairwise **Al**ignments
 
 ---
 
 # CLUSTAL workflow
-- Input sequences or upload file ∑ Specify parameters ∑ Run CLUSTAL ∑ Analyze results
+- Input sequences or upload file 
+- Specify parameters
+- Run CLUSTAL 
+- Analyze results
 
 ---
 
 # Clustal Omega
 - http://www.ebi.ac.uk/Tools/msa/clustalo/
-Type of sequence Query Sequence or file
+
+```{r clustal-omega}
+knitr::include_graphics("https://cdn-images-1.medium.com/max/2400/1*BtZ6GNh_768JAvtCQZE7GQ.png")
+```
 
 ---
 
-# Clustal Omega Output
-- Alignment
+# Clustal Omega Alignment
 
-Symbol * : .
-
-Meaning Fully conserved residue Strongly related residues Weakly related residues
+```{r clustal-omega-alignment}
+knitr::include_graphics("https://i.ytimg.com/vi/IM2CTI2rz0k/maxresdefault.jpg")
+```
 
 ---
 
-# Clustal Omega Output
-- Alignment
+# Clustal Omega Alignment
 
-Color Residues Red AVFPMILW Blue DE Magenta RK Green STYHCNGQ Grey Others
+| Symbol | Meaning                   |
+|--------|---------------------------|
+| *      | Fully conserved residue   |
+| :      | Strongly related residues |
+| .      | Weakly related residues   |
 
-Properties Small (small+ hydrophobic (incl. aromatic -Y)) Acidic Basic Hydroxyl + sulfhydryl + amine + G Unusual amino acids
+---
+
+# Clustal Omega Alignment
+
+| Color   | Residues | Properties                                      |
+|---------|----------|-------------------------------------------------|
+| Red     | AVFPMILW | Small, hydrophobic, aromatic -Y               |
+| Blue    | DE       | Acidic                                          |
+| Magenta | RK       | Basic                                           |
+| Green   | STYHCNGQ | Hydroxyl, sulfhydryl, amine, G                  |
+| Grey    | Others   | Unusual amino acids                             |
 
 ---
 
 # Clustal Omega Output
 - Phylogenetic tree
 
----
-
-# Demo
-- Download file:
-- http://www.bioinformaticsworld.com/clustal_seq.txt
-- Go to Clustal Omega website
-- Run on downloaded file
+```{r clustal-omega-tree, out.height=400}
+knitr::include_graphics("http://arriolagen677s12.weebly.com/uploads/1/0/6/4/10648845/2013519_orig.png")
+```
 
 ---
 
@@ -219,7 +280,7 @@ Properties Small (small+ hydrophobic (incl. aromatic -Y)) Acidic Basic Hydroxyl 
 
 ---
 
-# ENCODE project
+# ENCODE project - https://encodeproject.org/
 - Encyclopedia of DNA elements
 - https://www.encodeproject.org/
 - Launched in 2003 to identify all functional elements in human genome
@@ -227,27 +288,25 @@ Properties Small (small+ hydrophobic (incl. aromatic -Y)) Acidic Basic Hydroxyl 
 - Massive consortium led by NHGRI
 
 ---
-# ENCODE project: Datasets
-https://www.encodeproject.org/
+# ENCODE project: Datasets - https://encodeproject.org/
 
 ---
 
-# ENCODE project: Assays
-https://www.encodeproject.org/
+# ENCODE project: Assays - https://encodeproject.org/
 
 ---
 
-# UCSC Genome Browser
+# UCSC Genome Browser - https://genome.ucsc.edu/ 
 - Large public database of genome data
-- https://genome.ucsc.edu/ - Linked to many public
+- Linked to many public
 repositories, e.g. ENCODE
 - Easy to use 
 - Customizable view 
--  Can upload your own data (`custom tracks')
+-  Can upload your own data (`custom tracks`)
 
 ---
 
-# UCSC Genome Browser
+# UCSC Genome Browser - https://genome.ucsc.edu/ 
 Mouse genome, mm9
 
 Genomic location
@@ -307,5 +366,3 @@ Search mouse data
 # Demo files
 - BLAST
 - https://digitalworldbiology.com/BLAST/sequences
-- CLUSTAL
-- http://www.bioinformaticsworld.com/clustal_seq. txt
